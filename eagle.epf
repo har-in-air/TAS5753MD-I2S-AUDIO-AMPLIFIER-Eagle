@@ -1,0 +1,30 @@
+[Eagle]
+Version="06 06 00"
+Platform="Windows"
+Serial="62191E841E-LSR-WLM-1EL"
+Globals="Globals"
+Desktop="Desktop"
+
+[Globals]
+AutoSaveProject=1
+UsedLibrary="d:/eagle_workspace/lbr/Connector .lbr"
+UsedLibrary="d:/eagle_workspace/lbr/HT7333_SOT89.lbr"
+UsedLibrary="d:/eagle_workspace/lbr/Maxim_By_element14_Batch_1.lbr"
+UsedLibrary="d:/eagle_workspace/lbr/ST Microelctronics_By_element14_Batch_1.lbr"
+UsedLibrary="d:/eagle_workspace/lbr/SparkFun-DiscreteSemi.lbr"
+UsedLibrary="d:/eagle_workspace/lbr/SparkFun-Passives.lbr"
+UsedLibrary="d:/eagle_workspace/lbr/adafruit.lbr"
+UsedLibrary="d:/eagle_workspace/lbr/hari.lbr"
+UsedLibrary="d:/eagle_workspace/lbr/inductors.lbr"
+UsedLibrary="d:/eagle_workspace/lbr/microbuilder.lbr"
+UsedLibrary="d:/eagle_workspace/lbr/switch-tact.lbr"
+
+[Win_1]
+Type="Control Panel"
+Loc="81 84 680 483"
+State=1
+Number=0
+
+[Desktop]
+Screen="1920 1080"
+Window="Win_1"
