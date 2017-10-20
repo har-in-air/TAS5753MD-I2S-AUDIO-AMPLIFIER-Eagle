@@ -6,10 +6,11 @@ Eagle schematic, layout and gerber files
 Uses Stereo Bridge Tied Load application schematic from the TI datasheet. Added an A04409 PMOSFET and BSS138 NMOSFET to allow controlled PVDD on/off. Added MAX16904 3.3V (max 600mA) switching regulator to power the TTL logic 3.3V supply - this can also be used to supply 3.3V to the driving circuit, e.g. Espressif ESP32 module with web radio or bluetooth speaker firmware.
 
 Features : 
-1. PVDD range is 4.5V to 24V 
+1. PVDD range is 4.5V to 24V
 2. Can drive 4ohm speakers
 3. 90% efficiency
-4. Requires external MCLK. However, if used with 44.1kHz or 48kHz sampling rates, and the bit clock (BCK / SCLK) is at least 64 x sampling rate, then MCLK can be tied to BCK. A solder jumper is provided for this. This is how I have tested the board.
+4. 0.2%THD @ 10W rms/channel into 4ohms with PVDD = 12V
+5. Requires external MCLK. However, if used with 44.1kHz or 48kHz sampling rates, and the bit clock (BCK / SCLK) is at least 64 x sampling rate, then MCLK can be tied to BCK. A solder jumper is provided for this. This is how I have tested the board.
 
 ## Components
 See the datasheet for recommendations. The specific packages used in the layout are :
