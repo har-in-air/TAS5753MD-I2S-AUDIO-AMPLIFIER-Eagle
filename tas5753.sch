@@ -5391,8 +5391,8 @@ Parts Updated:
 <part name="C7" library="hari" deviceset="CAP_CERAMIC" device="0603" value="47n"/>
 <part name="C5" library="hari" deviceset="CAP_CERAMIC" device="0603" value="4n7"/>
 <part name="C8" library="hari" deviceset="CAP_CERAMIC" device="0603" value="4n7"/>
-<part name="C13" library="SparkFun-Passives" deviceset="CAP_POL" device="E"/>
-<part name="C29" library="SparkFun-Passives" deviceset="CAP_POL" device="E"/>
+<part name="C13" library="SparkFun-Passives" deviceset="CAP_POL" device="E" value="330u 35V"/>
+<part name="C29" library="SparkFun-Passives" deviceset="CAP_POL" device="E" value="330u 35V"/>
 <part name="P1" library="hari" deviceset="CONN_1X11_SMT_254" device=""/>
 <part name="J2" library="Connector " deviceset="SCREW-TERMINAL-2P" device="'5.08'"/>
 <part name="C9" library="hari" deviceset="CAP_CERAMIC" device="0603" value="10u"/>
@@ -5445,7 +5445,7 @@ Parts Updated:
 <plain>
 </plain>
 <instances>
-<instance part="R6" gate="G$1" x="40.64" y="25.4"/>
+<instance part="R6" gate="G$1" x="30.48" y="25.4"/>
 <instance part="R5" gate="G$1" x="12.7" y="17.78" rot="R90"/>
 <instance part="R9" gate="G$1" x="58.42" y="5.08" rot="R90"/>
 <instance part="PWR31" gate="G$1" x="154.94" y="25.4"/>
@@ -5530,16 +5530,16 @@ Parts Updated:
 <attribute name="VALUE" x="71.12" y="50.8" size="1.27" layer="96" font="vector" rot="R180"/>
 </instance>
 <instance part="C31" gate="G$1" x="160.02" y="33.02" smashed="yes" rot="R180">
-<attribute name="NAME" x="167.64" y="33.02" size="1.27" layer="95" font="vector" rot="R180"/>
-<attribute name="VALUE" x="172.72" y="30.48" size="1.27" layer="96" font="vector" rot="R180"/>
+<attribute name="NAME" x="165.1" y="35.56" size="1.27" layer="95" font="vector" rot="R180"/>
+<attribute name="VALUE" x="172.72" y="33.02" size="1.27" layer="96" font="vector" rot="R180"/>
 </instance>
 <instance part="C4" gate="G$1" x="12.7" y="27.94" smashed="yes" rot="R180">
 <attribute name="NAME" x="10.16" y="30.48" size="1.27" layer="95" font="vector" rot="R180"/>
 <attribute name="VALUE" x="10.16" y="27.94" size="1.27" layer="96" font="vector" rot="R180"/>
 </instance>
-<instance part="C7" gate="G$1" x="27.94" y="25.4" smashed="yes" rot="R270">
-<attribute name="NAME" x="30.48" y="27.94" size="1.27" layer="95" font="vector"/>
-<attribute name="VALUE" x="30.48" y="25.4" size="1.27" layer="96" font="vector"/>
+<instance part="C7" gate="G$1" x="40.64" y="22.86" smashed="yes" rot="R270">
+<attribute name="NAME" x="43.18" y="25.4" size="1.27" layer="95" font="vector"/>
+<attribute name="VALUE" x="38.1" y="25.4" size="1.27" layer="96" font="vector"/>
 </instance>
 <instance part="C5" gate="G$1" x="17.78" y="22.86" smashed="yes" rot="R180">
 <attribute name="NAME" x="20.32" y="20.32" size="1.27" layer="95" font="vector" rot="R180"/>
@@ -5552,7 +5552,7 @@ Parts Updated:
 <instance part="C13" gate="G$1" x="48.26" y="53.34"/>
 <instance part="C29" gate="G$1" x="154.94" y="33.02" smashed="yes">
 <attribute name="NAME" x="150.876" y="28.575" size="1.778" layer="95"/>
-<attribute name="VALUE" x="155.956" y="28.829" size="1.778" layer="96"/>
+<attribute name="VALUE" x="150.876" y="26.289" size="1.778" layer="96"/>
 </instance>
 <instance part="P1" gate="G$1" x="180.34" y="33.02" smashed="yes" rot="MR0"/>
 <instance part="J2" gate="G$1" x="-30.48" y="43.18" smashed="yes" rot="MR0">
@@ -5883,23 +5883,15 @@ Parts Updated:
 <pinref part="U2" gate="G$1" pin="OSCRES@PIN22"/>
 </segment>
 </net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="33.02" y1="25.4" x2="35.56" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="C7" gate="G$1" pin="P$1"/>
-</segment>
-</net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="R6" gate="G$1" pin="2"/>
 <wire x1="38.1" y1="20.32" x2="45.72" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="20.32" x2="45.72" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="22.86" x2="45.72" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="22.86" x2="73.66" y2="22.86" width="0.1524" layer="91"/>
-<junction x="45.72" y="22.86"/>
 <pinref part="U2" gate="G$1" pin="PLLFLTP@PIN17"/>
 <pinref part="C8" gate="G$1" pin="P$1"/>
+<pinref part="C7" gate="G$1" pin="P$1"/>
+<junction x="45.72" y="22.86"/>
 </segment>
 </net>
 <net name="N$12" class="0">
@@ -6183,15 +6175,15 @@ Parts Updated:
 <net name="N$23" class="0">
 <segment>
 <wire x1="30.48" y1="20.32" x2="25.4" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="20.32" x2="25.4" y2="25.4" width="0.1524" layer="91"/>
-<junction x="25.4" y="20.32"/>
 <wire x1="25.4" y1="15.24" x2="25.4" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="15.24" x2="48.26" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="15.24" x2="48.26" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="20.32" x2="73.66" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="ANAREG1@PIN18"/>
-<pinref part="C7" gate="G$1" pin="P$2"/>
 <pinref part="C8" gate="G$1" pin="P$2"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="25.4" y1="25.4" x2="25.4" y2="20.32" width="0.1524" layer="91"/>
+<junction x="25.4" y="20.32"/>
 </segment>
 </net>
 <net name="RST" class="0">
@@ -6423,9 +6415,35 @@ Parts Updated:
 <junction x="142.24" y="58.42"/>
 </segment>
 </net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="R6" gate="G$1" pin="2"/>
+<pinref part="C7" gate="G$1" pin="P$2"/>
+<wire x1="35.56" y1="25.4" x2="38.1" y2="22.86" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,0,106.68,U1,SUP_2,VIN,,,"/>
+<approved hash="104,1,0,104.14,U1,SUP,VIN,,,"/>
+<approved hash="104,1,0,101.6,U1,BIAS,N$24,,,"/>
+<approved hash="208,1,154.94,17.78,3.3V,sup,,,,"/>
+<approved hash="208,1,33.02,10.16,3.3V,sup,,,,"/>
+<approved hash="208,1,27.94,45.72,3.3V,sup,,,,"/>
+<approved hash="208,1,172.72,5.08,3.3V,sup,,,,"/>
+<approved hash="208,1,35.56,104.14,3.3V,out,,,,"/>
+<approved hash="208,1,50.8,104.14,3.3V,sup,,,,"/>
+<approved hash="208,1,43.18,-10.16,3.3V,sup,,,,"/>
+<approved hash="206,1,35.56,99.06,N$20,,,,,"/>
+<approved hash="206,1,35.56,101.6,N$20,,,,,"/>
+<approved hash="113,1,194.729,81.28,J4,,,,,"/>
+<approved hash="113,1,194.729,60.96,J5,,,,,"/>
+<approved hash="113,1,-27.0891,43.18,J2,,,,,"/>
+<approved hash="113,1,-30.9245,62.0818,J1,,,,,"/>
+<approved hash="113,1,71.5645,100.182,J3,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
