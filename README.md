@@ -23,7 +23,7 @@ See the datasheet for recommendations. The specific packages used in the layout 
 0603 : remaining smt ceramic caps
 
 ### Resistors
-All are 0603 package. R9 (18K) specificially needs to be 1% precision. Either populate R7 OR R8 to set the LSb of the TAS5753MD I2C slave address. R4 (22K) should be shorted or replaced with a 0 ohm resistor if PVDD is less than 10V, to ensure that the PMOSFET fully turns on.
+All are 0603 package. R9 (18K) needs to be 1% precision. Either populate R7 OR R8 to set the LSb of the TAS5753MD I2C slave address. R4 (22K) should be shorted or replaced with a 0 ohm resistor if PVDD is less than 10V, to ensure that the PMOSFET fully turns on.
 
 I found all the passive components on Aliexpress and Ebay. E.g.:
 
